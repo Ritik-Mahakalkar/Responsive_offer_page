@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JioCinema Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/black-background-wallpaper_764067-194.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+             background-repeat: no-repeat; 
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .pricing-container {
+            max-width: 90%;
+            margin: auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            
+        }
+        p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+        .card-container {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+        .card {
+            background: linear-gradient(135deg, #7a0c88, #32004b);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #ffc107;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: scale(0.8);
+            box-shadow: 0px 0px 20px rgba(255, 193, 7, 0.8);
+        }
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #bbb;
+            font-size: 18px;
+        }
+        .btn-warning {
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+        .btn-warning:hover {
+            background: #e0a800;
+        }
+
+        /* Ensure cards are in a single row */
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            flex-wrap: nowrap; /* Prevents wrapping */
+            overflow-x: auto; /* Enables horizontal scrolling if needed */
+            padding-bottom: 10px; /* Prevents content cut-off */
+        }
+        
+       
+        
+        .col-md-4.d-flex {
+            flex: 1 1 auto; /* Ensures equal width */
+            min-width: 300px; /* Prevents shrinking too much */
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-wrap: wrap; /* Allows wrapping on smaller screens */
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="heading-container"> <h1>OUR PLANS</h1></div>
+       <p>Watch Best movies , sports , kids , and more than 300+ shows.</p>
+       
+        <div class="row mt-4 card-container">
+            <div class="col-md-4 d-flex">
+                <div class="card w-100">
+                    <h3>Basic Monthly</h3>
+                    <ul class="list-unstyled">
+                        <li>Includes all Premium content</li>
+                        <li>Any 1 device at a time allowed</li>
+                        <li>Download and watch anytime</li>
+                    </ul>
+                    <p class="price">₹90 <span class="original-price">₹180</span> 50% OFF</p>
+                    <button class="btn btn-warning">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card w-100">
+                    <h3>Standard Monthly</h3>
+                    <ul class="list-unstyled">
+                        <li>Ad-Free (except sports & live)</li>
+                        <li>Includes all Premium content</li>
+                        <li>Any 1 device at a time allowed</li>
+                        <li>Download and watch anytime</li>
+                    </ul>
+                    <p class="price">₹129 <span class="original-price">₹260</span> 51% OFF</p>
+                    <button class="btn btn-warning">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card w-100">
+                    <h3>Premium Monthly</h3>
+                    <ul class="list-unstyled">
+                        <li>Enjoy all Standard plan benefits</li>
+                        <li>Any 2 devices at a time allowd</li>
+                    </ul>
+                    <p class="price">₹189 <span class="original-price">₹249</span> 40% OFF</p>
+                    <button class="btn btn-warning">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
